@@ -1,12 +1,18 @@
 import React from 'react';
 
 type ProductProps = {
-    id: string;
+    id: number;
     name: string;
-    description: string;
-    image: string;
+    description: {
+        short: string;
+        long: string
+    };
+    image: {
+        mainImage: string;
+    };
     price: number;
     normalPrice: number;
+    onClick: () => void;
 };
 
 const ProductItem = ({
@@ -15,21 +21,26 @@ const ProductItem = ({
          description,
          image,
          price,
-         normalPrice
-    }: ProductProps) => {
+         normalPrice,
+         onClick
+     }: ProductProps) => {
     const [showHover, setShowHover] = React.useState(false);
 
     return (
-        <li className="relative border rounded-sm overflow-hidden shadow-md bg-[#F4F5F7] m-[10px] md:w-auto w-[280px]"
-            onMouseOver={() => setShowHover(true)} onMouseLeave={() => setShowHover(false)}>
-            <img src={image} alt={name} className="md:w-full md:h-70 object-cover w-[280px]" />
+        <li
+            className="relative border rounded-sm overflow-hidden shadow-md bg-[#F4F5F7] m-[10px] md:w-auto w-[280px]"
+            onMouseOver={() => setShowHover(true)}
+            onMouseLeave={() => setShowHover(false)}
+            onClick={onClick}
+        >
+            <img src={image.mainImage} alt={name} className="md:w-full md:h-70 object-cover w-[280px]" />
             <div className="p-4">
-                <h3 className="text-xl font-semibold">{name}</h3>
-                <p className="text-gray-700 text-[14px] mt-[5px]">{description}</p>
+                <h3 className="text-xl font-semibold truncate">{name}</h3>
+                <p className="text-gray-700 text-[14px] mt-[5px] truncate">{description.short}</p>
                 <span className="block text-[20px] font-bold mt-2">
-                    ${price.toFixed(2)}
+                    ${price}
                     {price !== normalPrice && (
-                        <span className="text-gray-400 line-through ml-2">${normalPrice.toFixed(2)}</span>
+                        <span className="text-gray-400 line-through ml-2">${normalPrice}</span>
                     )}
                 </span>
             </div>
@@ -54,6 +65,6 @@ const ProductItem = ({
             )}
         </li>
     );
-}
+};
 
 export default ProductItem;

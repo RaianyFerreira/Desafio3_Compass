@@ -21,11 +21,18 @@ const Inspiration: React.FC = () => {
             try {
                 const response = await fetch('http://localhost:3000/products');
                 const data: ImageData[] = await response.json();
-                const ids = [34, 35, 39, 41];
+
+                function getRandomIds(array: number[], count: number): number[] {
+                    const shuffled = array.sort(() => 0.5 - Math.random());
+                    return shuffled.slice(0, count);
+                }
+
+                const ids = getRandomIds(data.map(item => item.id), 4);
                 const filteredImages = ids.map(id => {
                     const imageData = data.find(item => item.id === id);
                     return imageData ? imageData.images.mainImage : '';
                 });
+
                 setImages(filteredImages);
             } catch (error) {
                 console.error('Error fetching images:', error);
@@ -63,9 +70,9 @@ const Inspiration: React.FC = () => {
     }, []);
 
     return (
-        <section className="flex items-center gap-10 pt-7 pb-7 overflow-hidden mx-auto bg-[#FCF8F3]">
+        <section className="flex items-center gap-10 pt-7 mt-[70px] pb-7 overflow-hidden mx-auto bg-[#FCF8F3]">
             <div className="max-w-[422px] md:ml-[90px] md:mr-[100px] ml-[130px] mr-[100px]">
-                <h2 className="text-[40px] text-gray-800 font-bold  mb-2 ">50+ Beautiful rooms inspiration</h2>
+                <h2 className="text-[40px] text-gray-800 font-bold mb-2">50+ Beautiful rooms inspiration</h2>
                 <p className="text-gray-600 text-base font-medium leading-relaxed mb-6">Our designer already made a lot of beautiful prototypes of rooms that inspire you</p>
                 <button
                     onClick={redirectExploration}
