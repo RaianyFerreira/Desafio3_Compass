@@ -46,7 +46,7 @@ const ProductItem = ({
             </div>
             {showHover && (
                 <div className="absolute inset-0 bg-[#3A3A3A] bg-opacity-80 flex flex-col justify-center items-center">
-                    <button className="bg-white text-[#B88E2F] font-bold py-2 px-[25px] mb-2 hover:text-white hover:bg-[#B88E2F]">Add to Cart</button>
+                    <button className="bg-white text-[#B88E2F] font-bold py-2 px-[25px] mb-2 hover:text-white hover:bg-[#B88E2F]">View Product</button>
                     <ul className="flex justify-around w-full text-white mt-[20px]">
                         <li className="flex flex-row items-center gap-[5px] ml-[5px]">
                             <img src="/img/icon_share.png" alt="Share" className="w-5 h-5 mb-[2px]" />

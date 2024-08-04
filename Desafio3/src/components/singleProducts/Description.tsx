@@ -38,7 +38,7 @@ const Description = () => {
                         key={index}
                         src={image}
                         alt={`Gallery image ${index + 1}`}
-                        className="object-cover w-[500px] justify-center mx-auto gap-9"
+                        className="object-cover md:w-[500px] w-auto justify-center mx-auto gap-9"
                     />
                 ))}
             </div>

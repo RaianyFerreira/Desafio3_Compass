@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProductItem from './ProductItem';
-import { useProduct } from "../../hero/ProductContext";
+import { useProduct } from "../../global/ProductContext";
 
 export type Product = {
     id: number;

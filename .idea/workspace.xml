@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71b9a008-3c58-456f-a368-43f039478bc4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Desafio3/src/components/singleProducts/RelatedProduct.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Desafio3/public/img/trash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Desafio3/src/components/checkout/Checkout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Desafio3/src/components/checkout/CheckoutHero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Desafio3/src/components/header/MiniCart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/public/img/hero_shop.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Desafio3/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/hero/ProductContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/hero/ProductContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/cart/Cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/cart/Cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/cart/CartProducts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/cart/CartProducts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/cart/HeroCart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/cart/HeroCart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/favorites/Favorites.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/checkout/CheckoutPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Desafio3/src/components/home/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/home/Hero.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Desafio3/src/components/home/Inspiration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/home/Inspiration.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Desafio3/src/components/home/products/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/home/products/ProductItem.tsx" afterDir="false" />
@@ -15,15 +20,12 @@
       <change beforePath="$PROJECT_DIR$/Desafio3/src/components/shop/HeroShop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/shop/HeroShop.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Desafio3/src/components/shop/Shop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/shop/Shop.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Desafio3/src/components/shop/ShopProducts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/shop/ShopProducts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/signup/Signup.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/signup/login/Login.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Desafio3/src/components/singleProducts/Description.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/singleProducts/Description.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/singleProducts/PagProduct.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/singleProducts/PagProduct.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Desafio3/src/components/singleProducts/ProductsDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/singleProducts/ProductsDetails.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/database/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/database/products.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/singleProducts/RelatedProduct.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/singleProducts/RelatedProduct.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Desafio3/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,16 +52,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\Raiany\\IdeaProjects\\Desafio3_Compass\\Desafio3\\node_modules\\typescript\\lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Raiany\\IdeaProjects\\Desafio3_Compass\\Desafio3\\node_modules\\typescript\\lib&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,7 +70,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722106500217</updated>
-      <workItem from="1722106503331" duration="107807000" />
+      <workItem from="1722106503331" duration="129369000" />
+      <workItem from="1722741489967" duration="19133000" />
     </task>
     <servers />
   </component>

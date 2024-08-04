@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import ProductItem from '../home/products/ProductItem';
-import { Product } from '../hero/ProductContext';
+import { Product } from '../global/ProductContext';
 
 const RelatedProducts = () => {
     const [products, setProducts] = useState<Product[] | null>(null);
@@ -33,7 +33,7 @@ const RelatedProducts = () => {
     return (
         <section className=" my-[50px] font-sans">
             <h2 className="text-4xl font-bold mb-6 text-center ">Related Products</h2>
-            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto justify-center ml-[50px] mr-[50px] gap-6">
+            <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 mx-auto justify-center md:ml-[50px] md:mr-[50px] gap-6 justify-center">
                 {products.slice(0, 4).map(product => (
                     <li key={product.id}>
                         <Link to={`/product/${product.id}`} onClick={() => window.scrollTo(0, 0)}>

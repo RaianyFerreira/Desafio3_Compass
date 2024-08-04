@@ -1,4 +1,4 @@
-import Hero from '../hero/Hero'
+import Hero from '../global/Hero'
 
 const HeroShop = () => {
     return (

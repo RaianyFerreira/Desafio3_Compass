@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProductItem from "../home/products/ProductItem";
 import axios from 'axios';
-import Hero from "../hero/Hero";
+import Hero from "../global/Hero";
 
 const ShopProducts = () => {
     const [show, setShow] = useState(4);
@@ -138,7 +138,7 @@ const ShopProducts = () => {
                 </div>
                 <div className="container mx-auto">
                     {filteredProducts.length > 0 ? (
-                        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+                        <ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
                             {filteredProducts.map((product, index) => {
                                 if (index < showing && index + 1 > showing - show && product.images && product.images.mainImage) {
                                     return (

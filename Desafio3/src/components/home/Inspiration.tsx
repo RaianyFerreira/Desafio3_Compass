@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 interface ImageData {
     id: number;
+    category: string;
     images: {
         mainImage: string;
     };
@@ -22,14 +23,16 @@ const Inspiration: React.FC = () => {
                 const response = await fetch('http://localhost:3000/products');
                 const data: ImageData[] = await response.json();
 
+                const armariosData = data.filter(item => item.category === 'Armarios');
+
                 function getRandomIds(array: number[], count: number): number[] {
                     const shuffled = array.sort(() => 0.5 - Math.random());
                     return shuffled.slice(0, count);
                 }
 
-                const ids = getRandomIds(data.map(item => item.id), 4);
+                const ids = getRandomIds(armariosData.map(item => item.id), 4);
                 const filteredImages = ids.map(id => {
-                    const imageData = data.find(item => item.id === id);
+                    const imageData = armariosData.find(item => item.id === id);
                     return imageData ? imageData.images.mainImage : '';
                 });
 

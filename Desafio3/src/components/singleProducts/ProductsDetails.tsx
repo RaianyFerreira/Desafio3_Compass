@@ -13,6 +13,8 @@ const ProductDetails = () => {
     const [quantity, setQuantity] = useState(1);
     const [size, setSize] = useState('');
     const [color, setColor] = useState('');
+    const [popupMessage, setPopupMessage] = useState('');
+    const [popupVisible, setPopupVisible] = useState(false);
 
     useEffect(() => {
         async function fetchProduct() {
@@ -27,9 +29,7 @@ const ProductDetails = () => {
         }
 
         fetchProduct();
-
         window.scrollTo(0, 0);
-
     }, [id]);
 
     function addQuantity() {
@@ -43,6 +43,27 @@ const ProductDetails = () => {
             setQuantity(quantity - 1);
         }
     }
+
+    const handleAddToCart = () => {
+        if (product) {
+            const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+            const existingProductIndex = cart.findIndex((item) => item.id === product.id);
+
+            if (existingProductIndex > -1) {
+
+                setPopupMessage('Esse item já está em seu carrinho!');
+            } else {
+                cart.push({ id: product.id, quantity, ...product });
+                localStorage.setItem('cart', JSON.stringify(cart));
+                setPopupMessage('Produto adicionado ao seu carrinho!');
+            }
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+            setPopupVisible(true);
+            setTimeout(() => setPopupVisible(false), 3000);
+            console.log('Product added to cart:', { id: product._id, quantity });
+        }
+    };
 
     if (!product) {
         return <div>Loading...</div>;
@@ -59,7 +80,7 @@ const ProductDetails = () => {
             </div>
             <div className="flex flex-col md:flex-row md:justify-center md:items-start gap-20 container">
                 <div className="flex flex-col items-center md:items-start md:flex-row gap-4">
-                    <div className="flex flex-col gap-4 md:mr-4 md:ml-[85px]">
+                    <div className="flex md:flex-col flex-row gap-4 md:mr-4 md:mt-0 mt-5 md:ml-[85px]">
                         {product.images.gallery.map((image, index) => (
                             <img
                                 key={index}
@@ -117,7 +138,7 @@ const ProductDetails = () => {
                         <button onClick={addQuantity} className="w-12 h-12 border-t border-b border-r text-lg border-[#9f9f9f] flex items-center justify-center text-black">
                             <span>+</span>
                         </button>
-                        <button className="ml-4 w-52 h-[48px] text-lg border border-black text-black bg-transparent hover:bg-[#B88E2F] hover:text-white hover:border-none transition duration-300">
+                        <button onClick={handleAddToCart} className="ml-4 w-52 h-[48px] text-lg border border-black text-black bg-transparent hover:bg-[#B88E2F] hover:text-white hover:border-none transition duration-300">
                             Add To Cart
                         </button>
                     </div>
@@ -142,7 +163,13 @@ const ProductDetails = () => {
                     </div>
                 </div>
             </div>
-            <hr className="h-8 border-gray-300 mx-full mt-[50px]" ></hr>
+            <hr className="h-8 border-gray-300 mx-full mt-[50px]" />
+
+            {popupVisible && (
+                <div className="fixed bottom-4 right-4 bg-[#B88E2F] text-white p-4 rounded-lg shadow-lg">
+                    {popupMessage}
+                </div>
+            )}
         </section>
     );
 };

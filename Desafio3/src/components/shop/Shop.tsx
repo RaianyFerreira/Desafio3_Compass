@@ -1,5 +1,5 @@
 import ShopProducts from "./ShopProducts";
-import Infos from "../hero/Infos";
+import Infos from "../global/Infos";
 
 const Shop = () => {
     return (
