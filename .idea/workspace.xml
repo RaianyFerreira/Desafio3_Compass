@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71b9a008-3c58-456f-a368-43f039478bc4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Desafio3/public/img/trash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Desafio3/src/components/checkout/Checkout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Desafio3/src/components/checkout/CheckoutHero.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Desafio3/src/components/header/MiniCart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/cart/Cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/cart/Cart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/cart/CartProducts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/cart/CartProducts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/cart/HeroCart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/cart/HeroCart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/favorites/Favorites.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/checkout/CheckoutPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/home/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/home/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/home/Inspiration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/home/Inspiration.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/home/products/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/home/products/ProductItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/home/products/Products.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/home/products/Products.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/shop/HeroShop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/shop/HeroShop.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/shop/Shop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/shop/Shop.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/shop/ShopProducts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/shop/ShopProducts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/signup/Signup.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/signup/login/Login.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/singleProducts/Description.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/singleProducts/Description.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/singleProducts/ProductsDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/singleProducts/ProductsDetails.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/singleProducts/RelatedProduct.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/singleProducts/RelatedProduct.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/contact/FormContact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/contact/FormContact.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1722106500217</updated>
       <workItem from="1722106503331" duration="129369000" />
-      <workItem from="1722741489967" duration="19133000" />
+      <workItem from="1722741489967" duration="19267000" />
     </task>
     <servers />
   </component>
