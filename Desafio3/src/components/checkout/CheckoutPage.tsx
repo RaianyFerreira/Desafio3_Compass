@@ -96,105 +96,107 @@ const CheckoutPage: React.FC = () => {
     return (
         <section className="mt-16 flex flex-col container gap-4 mx-auto">
             <form onSubmit={handlePlaceOrder}>
-                <div className="flex justify-between w-full gap-8">
-                    <div className="w-1/2 md:mr-[50px]">
+                <div className="flex flex-col md:flex-row md:gap-8">
+                    <div className="md:w-1/2">
                         <h1 className="font-semibold text-[28px] mb-[30px]">Billing details</h1>
                         <div className="mb-4">
-                            <div className="flex flex-row gap-[163px]">
-                                <label htmlFor="firstname" className="block text-sm font-medium mb-2">First Name</label>
-                                <label htmlFor="lastname" className="block text-sm font-medium mb-2">Last Name</label>
-                            </div>
-                            <div className="flex flex-row gap-[30px]">
-                                <input
-                                    type="text"
-                                    id="firstname"
-                                    className={`border ${formErrors.firstname ? 'border-red-500' : 'border-gray-400'} px-[1px] py-3 rounded-md text-left`}
-                                    value={formData.firstname}
-                                    onChange={handleInputChange}
-                                />
-                                <input
-                                    type="text"
-                                    id="lastname"
-                                    className={`border ${formErrors.lastname ? 'border-red-500' : 'border-gray-400'} px-[1px] py-3 rounded-md text-left`}
-                                    value={formData.lastname}
-                                    onChange={handleInputChange}
-                                />
+                            <div className="flex flex-col md:flex-row md:gap-[30px]">
+                                <div className="mb-4">
+                                    <label htmlFor="firstname" className="ml-[10px] md:ml-0 block text-sm font-medium mb-2">First Name</label>
+                                    <input
+                                        type="text"
+                                        id="firstname"
+                                        className={`border ${formErrors.firstname ? 'border-red-500' : 'border-gray-400'} ml-[10px] md:ml-0 px-3 py-2 rounded-md text-left`}
+                                        value={formData.firstname}
+                                        onChange={handleInputChange}
+                                    />
+                                </div>
+                                <div className="mb-4">
+                                    <label htmlFor="lastname" className="ml-[10px] md:ml-0 block text-sm font-medium mb-2">Last Name</label>
+                                    <input
+                                        type="text"
+                                        id="lastname"
+                                        className={`border ${formErrors.lastname ? 'border-red-500' : 'border-gray-400'} ml-[10px] md:ml-0 px-3 py-2 rounded-md text-left`}
+                                        value={formData.lastname}
+                                        onChange={handleInputChange}
+                                    />
+                                </div>
                             </div>
                         </div>
                         <div className="mb-5">
-                            <label htmlFor="companyName" className="block text-sm font-medium mb-2 mt-6">Company Name (Optional)</label>
+                            <label htmlFor="companyName" className="ml-[10px] md:ml-0 block text-sm font-medium mb-2">Company Name (Optional)</label>
                             <input
                                 type="text"
                                 id="companyName"
-                                className="border border-gray-400 w-[440px] py-3 rounded-md text-left"
+                                className="border border-gray-400 w-[227px] md:w-[483px] py-3 rounded-md text-left ml-[10px] md:ml-0"
                             />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="zipcode" className="block text-sm font-medium mb-2 mt-6">Zip code</label>
+                            <label htmlFor="zipcode" className="ml-[10px] md:ml-0 block text-sm font-medium mb-2">Zip code</label>
                             <input
                                 type="text"
                                 id="zipcode"
-                                className={`border ${formErrors.zipcode ? 'border-red-500' : 'border-gray-400'} w-[440px] py-3 rounded-md text-left`}
+                                className={`border ${formErrors.zipcode ? 'border-red-500' : 'border-gray-400'} ml-[10px] md:ml-0 w-[227px] md:w-[483px] py-3 rounded-md text-left`}
                                 value={formData.zipcode}
                                 onChange={handleInputChange}
                             />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="countryRegion" className="block text-sm font-medium mb-2 mt-6">Country / Region</label>
+                            <label htmlFor="countryRegion" className=" ml-[10px] md:ml-0 block text-sm font-medium mb-2">Country / Region</label>
                             <input
                                 type="text"
                                 id="countryRegion"
-                                className={`border ${formErrors.countryRegion ? 'border-red-500' : 'border-gray-400'} w-[440px] py-3 rounded-md text-left`}
+                                className={`border ${formErrors.countryRegion ? 'border-red-500' : 'border-gray-400'} ml-[10px] md:ml-0 w-[227px] md:w-[483px] py-3 rounded-md text-left`}
                                 value={formData.countryRegion}
                                 onChange={handleInputChange}
                             />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="streetAddress" className="block text-sm font-medium mb-2 mt-6">Street Address</label>
+                            <label htmlFor="streetAddress" className="ml-[10px] md:ml-0 block text-sm font-medium mb-2">Street Address</label>
                             <input
                                 type="text"
                                 id="streetAddress"
-                                className={`border ${formErrors.streetAddress ? 'border-red-500' : 'border-gray-400'} w-[440px] py-3 rounded-md text-left`}
+                                className={`border ${formErrors.streetAddress ? 'border-red-500' : 'border-gray-400'} ml-[10px] md:ml-0  w-[227px] md:w-[483px] py-3 rounded-md text-left`}
                                 value={formData.streetAddress}
                                 onChange={handleInputChange}
                             />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="townCity" className="block text-sm font-medium mb-2 mt-6">Town / City</label>
+                            <label htmlFor="townCity" className="ml-[10px] md:ml-0 block text-sm font-medium mb-2">Town / City</label>
                             <input
                                 type="text"
                                 id="townCity"
-                                className={`border ${formErrors.townCity ? 'border-red-500' : 'border-gray-400'} w-[440px] py-3 rounded-md text-left`}
+                                className={`border ${formErrors.townCity ? 'border-red-500' : 'border-gray-400'} ml-[10px] md:ml-0 w-[227px] md:w-[483px] py-3 rounded-md text-left`}
                                 value={formData.townCity}
                                 onChange={handleInputChange}
                             />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="province" className="block text-sm font-medium mb-2 mt-6">Province</label>
+                            <label htmlFor="province" className=" ml-[10px] md:ml-0 block text-sm font-medium mb-2">Province</label>
                             <input
                                 type="text"
                                 id="province"
-                                className={`border ${formErrors.province ? 'border-red-500' : 'border-gray-400'} w-[440px] py-3 rounded-md text-left`}
+                                className={`border ${formErrors.province ? 'border-red-500' : 'border-gray-400'} ml-[10px] md:ml-0  w-[227px] md:w-[483px] py-3 rounded-md text-left`}
                                 value={formData.province}
                                 onChange={handleInputChange}
                             />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="addonAddress" className="block text-sm font-medium mb-2 mt-6">Add-on address</label>
+                            <label htmlFor="addonAddress" className="ml-[10px] md:ml-0 block text-sm font-medium mb-2">Add-on address</label>
                             <input
                                 type="text"
                                 id="addonAddress"
-                                className={`border ${formErrors.addonAddress ? 'border-red-500' : 'border-gray-400'} w-[440px] py-3 rounded-md text-left`}
+                                className={`border ${formErrors.addonAddress ? 'border-red-500' : 'border-gray-400'} ml-[10px] md:ml-0 w-[227px] md:w-[483px] py-3 rounded-md text-left`}
                                 value={formData.addonAddress}
                                 onChange={handleInputChange}
                             />
                         </div>
                         <div className="mb-4">
-                            <label htmlFor="emailAddress" className="block text-sm font-medium mb-2 mt-6">Email address</label>
+                            <label htmlFor="emailAddress" className="ml-[10px] md:ml-0 block text-sm font-medium mb-2">Email address</label>
                             <input
                                 type="email"
                                 id="emailAddress"
-                                className={`border ${formErrors.emailAddress ? 'border-red-500' : 'border-gray-400'} w-[440px] py-3 rounded-md text-left`}
+                                className={`border ${formErrors.emailAddress ? 'border-red-500' : 'border-gray-400'} ml-[10px] md:ml-0 w-[227px] md:w-[483px] py-3 rounded-md text-left`}
                                 value={formData.emailAddress}
                                 onChange={handleInputChange}
                             />
@@ -203,41 +205,41 @@ const CheckoutPage: React.FC = () => {
                             <input
                                 type="text"
                                 id="addinfo"
-                                className="border border-gray-400 w-[440px] py-4 rounded-md pl-[15px] text-sm"
+                                className="border border-gray-400 w-[227px] md:w-[483px] py-4 rounded-md pl-3 text-sm ml-[10px] md:ml-0"
                                 placeholder="Additional information"
                             />
                         </div>
                     </div>
-                    <div className="w-1/2">
-                        <div className="flex flex-col items-center gap-4 mx-auto max-w-2xl">
-                            <div className="flex justify-between w-full gap-4">
-                                <div className="flex-1">
-                                    <div className="flex flex-row mb-4">
-                                        <h2 className="text-xl font-medium mr-[435px] font-semibold">Product</h2>
+                    <div className="md:w-1/2 mt-8 md:mt-0 ml-[10px] md:ml-0">
+                        <div className="flex flex-col gap-4 mx-auto">
+                            <div className="flex flex-col md:flex-row md:justify-between gap-4">
+                                <div className="md:flex-1 max-w-[300px] md:max-w-2xl">
+                                    <div className="flex flex-col md:flex-row mb-4 ml-[10px] md:ml-0">
+                                        <h2 className="text-xl font-medium mr-[460px] font-semibold">Product</h2>
                                         <h2 className="text-xl font-medium font-semibold">Subtotal</h2>
                                     </div>
                                     {cart.map((product) => (
-                                        <div key={product.id} className="flex items-center gap-4 mb-4 text-gray-600 text-[15px]">
-                                            <p className=" text-gray-400">{product.title} <span className="text-black"> x {product.quantity} </span> </p>
-                                            <p className=" text-black ml-[80px]">
+                                        <div key={product.id} className=" ml-[10px] md:ml-0 flex items-center justify-between mb-4 text-gray-600 text-[15px]">
+                                            <p className="text-gray-400">{product.title} <span className="text-black"> x {product.quantity} </span></p>
+                                            <p className="text-black pl-[20px]">
                                                 {(product.salePrice * product.quantity).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
                                             </p>
                                         </div>
                                     ))}
-                                    <div className="flex justify-between mb-4">
+                                    <div className="flex justify-between mb-4 ml-[10px] md:ml-0">
                                         <h2 className="text-lg font-medium mt-[10px]">Subtotal</h2>
                                         <p className="text-black mt-[5px]">
                                             {calculateSubtotal().toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
                                         </p>
                                     </div>
-                                    <div className="flex justify-between mb-8">
+                                    <div className="flex justify-between mb-8 ml-[10px] md:ml-0">
                                         <h2 className="text-lg font-medium mt-[7px]">Total</h2>
                                         <p className="text-2xl text-yellow-600 font-semibold">
                                             {total.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
                                         </p>
                                     </div>
                                     <hr className="h-[1px] border border-gray-300 mb-4" />
-                                    <div className="space-y-4">
+                                    <div className="space-y-4 ml-[10px] md:ml-0">
                                         <div className="flex items-center">
                                             <input
                                                 type="radio"
@@ -267,27 +269,28 @@ const CheckoutPage: React.FC = () => {
                                                 type="radio"
                                                 id="option3"
                                                 name="paymentMethod"
-                                                value="Option 3"
-                                                checked={selectedOption === 'Option 3'}
+                                                value="Cash On Delivery"
+                                                checked={selectedOption === 'Cash On Delivery'}
                                                 onChange={handleOptionChange}
                                                 className="mr-2"
                                             />
                                             <label
                                                 htmlFor="option3"
-                                                className={`text-lg font-medium ${selectedOption === 'Option 3' ? 'text-black' : 'text-[#9F9F9F]'}`}
+                                                className={`text-lg font-medium ${selectedOption === 'Cash On Delivery' ? 'text-black' : 'text-[#9F9F9F]'}`}
                                             >
                                                 Cash On Delivery
                                             </label>
                                         </div>
-                                        {selectedOption === 'Option 3' && (
+                                        {selectedOption === 'Cash On Delivery' && (
                                             <p className="text-gray-500">
+                                                Pay in cash upon delivery.
                                             </p>
                                         )}
                                     </div>
                                 </div>
                             </div>
-                            <p className="font-sans mt-[10px] mb-[15px]">
-                                Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in ourㅤ
+                            <p className="font-sans mt-[10px] mb-[15px] text-sm">
+                                Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our
                                 <a
                                     href="https://policies.google.com/privacy?hl=en-US"
                                     className="font-semibold text-black hover:underline"
@@ -299,7 +302,7 @@ const CheckoutPage: React.FC = () => {
                             </p>
                             <button
                                 type="submit"
-                                className="w-[300px] text-lg border border-black px-6 py-4 rounded-[15px] hover:bg-yellow-600 hover:border-yellow-600 hover:text-white transition"
+                                className="md:ml-[167px] w-full md:w-[300px] text-lg border border-black px-6 py-4 rounded-[15px] hover:bg-yellow-600 hover:border-yellow-600 hover:text-white transition"
                             >
                                 Place Order
                             </button>
@@ -316,7 +319,7 @@ const CheckoutPage: React.FC = () => {
                             onClick={() => setShowPopup(null)}
                             className="mt-4 px-6 py-2 bg-red-500 text-white rounded-md"
                         >
-                            Fechar
+                            Close
                         </button>
                     </div>
                 </div>
@@ -330,7 +333,7 @@ const CheckoutPage: React.FC = () => {
                             onClick={() => setShowPopup(null)}
                             className="mt-4 px-6 py-2 bg-green-500 text-white rounded-md"
                         >
-                            Fechar
+                            Close
                         </button>
                     </div>
                 </div>

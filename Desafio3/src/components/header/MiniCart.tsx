@@ -1,4 +1,3 @@
-// MiniCart.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CloseIcon from '/img/fechar.png';
@@ -63,10 +62,10 @@ const MiniCart: React.FC = () => {
                 <p className="text-lg font-sans">Subtotal <span className="ml-[130px] text-[#B88E2F] font-semibold">${total.toFixed(2)} </span></p>
                 <hr className="h-[1px] border border-gray-300 mt-[15px]"></hr>
                 <div className="mt-3">
-                    <Link to="/checkout" className=" mt-4 text-center bg-white text-black py-1 px-[20px] rounded-[40px] border border-black">
+                    <Link to="/cart" className=" mt-4 text-center bg-white text-black py-1 px-[20px] rounded-[40px] border border-black">
                         Cart
                     </Link>
-                    <Link to="/cart" className=" mt-4 text-center bg-white text-black py-1 px-[20px] rounded-[40px] border border-black ml-[5px]">
+                    <Link to="/checkout" className=" mt-4 text-center bg-white text-black py-1 px-[20px] rounded-[40px] border border-black ml-[7px]">
                         Checkout
                     </Link>
                     <button className="mt-4 text-center bg-white text-black py-1 px-[20px] ml-[5px] rounded-[40px] border border-black">Comparison</button>

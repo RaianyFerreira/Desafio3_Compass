@@ -1,5 +1,6 @@
 import React from 'react';
 import TrashIcon from '/img/trash.png';
+import {Link} from "react-router-dom";
 
 const CartProducts = () => {
     const [cart, setCart] = React.useState<any[]>([]);
@@ -81,7 +82,7 @@ const CartProducts = () => {
                             {total.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
                         </p>
                     </div>
-                    <button className="mt-4 text-black border border-black px-10 py-3 rounded-lg hover:bg-[#B88E2F] hover:border-[#B88E2F] hover:text-white">Check Out</button>
+                    <Link to="/checkout" className="mt-4 text-black border border-black px-10 py-3 rounded-lg hover:bg-[#B88E2F] hover:border-[#B88E2F] hover:text-white">Checkout</Link>
                 </div>
             </div>
         </section>

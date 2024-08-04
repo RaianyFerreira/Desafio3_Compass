@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71b9a008-3c58-456f-a368-43f039478bc4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/cart/CartProducts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/cart/CartProducts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/checkout/CheckoutPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/checkout/CheckoutPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/contact/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/contact/Contact.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Desafio3/src/components/contact/FormContact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/contact/FormContact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio3/src/components/header/MiniCart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3/src/components/header/MiniCart.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1722106500217</updated>
       <workItem from="1722106503331" duration="129369000" />
-      <workItem from="1722741489967" duration="19267000" />
+      <workItem from="1722741489967" duration="25763000" />
     </task>
     <servers />
   </component>
