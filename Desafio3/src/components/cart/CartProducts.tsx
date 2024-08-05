@@ -33,10 +33,6 @@ const CartProducts = () => {
         localStorage.setItem('cart', JSON.stringify(updatedCart));
     };
 
-    const handlePlaceOrder = () => {
-        console.log("Order placed with products:", cart);
-    };
-
     const calculateSubtotal = () => {
         return cart.reduce((accum, item) => accum + item.quantity * item.salePrice, 0);
     };

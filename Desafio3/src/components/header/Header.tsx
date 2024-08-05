@@ -19,7 +19,7 @@ const Header: React.FC = () => {
                 <ul className={`font-sans font-semibold md:flex md:flex-row md:gap-[75px] md:relative md:w-auto md:bg-transparent md:shadow-none absolute top-full right-0 w-[200px] bg-white shadow-md transition-transform duration-300 ease-in-out ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0 hidden md:translate-y-0 md:opacity-100'}`}>
                     <li><Link to="/" className="block px-4 py-2 text-black text-lg hover:underline md:p-0">Home</Link></li>
                     <li><Link to="/shop" className="block px-4 py-2 text-black text-lg hover:underline md:p-0">Shop</Link></li>
-                    <li><Link to="/about" className="block px-4 py-2 text-black text-lg hover:underline md:p-0">About</Link></li>
+                    <li><Link to="" className="block px-4 py-2 text-black text-lg hover:underline md:p-0">About</Link></li>
                     <li><Link to="/contact" className="block px-4 py-2 text-black text-lg hover:underline md:p-0">Contact</Link></li>
                 </ul>
                 <ul className="flex items-center gap-[20px] md:gap-[45px] transition-opacity duration-300 md:ml-[70px]">

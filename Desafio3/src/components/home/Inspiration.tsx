@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 
 interface ImageData {
     id: number;
@@ -45,10 +45,6 @@ const Inspiration: React.FC = () => {
         fetchImages();
     }, []);
 
-    function redirectExploration() {
-        navigate('/shop');
-    }
-
     const media = window.matchMedia('(max-width: 800px)');
 
     function moveSlide(active: number) {
@@ -77,12 +73,9 @@ const Inspiration: React.FC = () => {
             <div className="max-w-[422px] md:ml-[90px] md:mr-[100px] ml-[130px] mr-[100px]">
                 <h2 className="text-[40px] text-gray-800 font-bold mb-2">50+ Beautiful rooms inspiration</h2>
                 <p className="text-gray-600 text-base font-medium leading-relaxed mb-6">Our designer already made a lot of beautiful prototypes of rooms that inspire you</p>
-                <button
-                    onClick={redirectExploration}
-                    className="bg-[#B88E2F] text-white px-8 py-3 font-bold"
-                >
+                <Link to='/shop' className="bg-[#B88E2F] text-white px-8 py-3 font-bold">
                     Explore More
-                </button>
+                </Link>
             </div>
 
             <div className="flex gap-7 max-w-[600px]">

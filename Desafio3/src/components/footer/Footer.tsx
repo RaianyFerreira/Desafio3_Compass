@@ -1,4 +1,8 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import FacebookIcon from '/img/facebook_footer.png';
+import LinkedInIcon from '/img/linkedin_footer.png';
+import TwitterIcon from '/img/x_footer.png';
+import InstagramIcon from '/img/instagram_footer.png';
 
 const Footer = () => {
     return (
@@ -6,7 +10,23 @@ const Footer = () => {
             <section className="flex flex-col md:flex-row justify-between items-start max-w-[1000px] mx-auto mt-14 mb-20">
                 <div className="mb-8 md:mb-0">
                     <h2 className="text-2xl text-left font-sans font-semibold md:mb-[50px] ml-[10px] md:ml-0">Funiro.</h2>
-                    <p className="text-gray-500 text-base text-left max-w-xs font-sans ml-[10px] md:ml-0">400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+                    <p className="text-gray-500 text-base text-left max-w-xs font-sans ml-[10px] md:ml-0">
+                        400 University Drive Suite 200 Coral Gables, <br/> FL 33134 USA
+                    </p>
+                    <div className="mt-[18px] flex flex-row">
+                        <a href={`https://facebook.com/sharer/sharer.php?u=${window.location.href}`} target="_blank" rel="noopener noreferrer">
+                            <img src={FacebookIcon} alt="Share on Facebook" className="w-18 h-18 cursor-pointer" />
+                        </a>
+                        <a href={`https://www.instagram.com`} target="_blank" rel="noopener noreferrer">
+                            <img src={InstagramIcon} alt="Share on Instagram" className="w-18 h-18 cursor-pointer" />
+                        </a>
+                        <a href={`https://twitter.com/intent/tweet?url=${window.location.href}`} target="_blank" rel="noopener noreferrer">
+                            <img src={TwitterIcon} alt="Share on Twitter" className="w-18 h-18 cursor-pointer" />
+                        </a>
+                        <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}`} target="_blank" rel="noopener noreferrer">
+                            <img src={LinkedInIcon} alt="Share on LinkedIn" className="w-18 h-18 cursor-pointer" />
+                        </a>
+                    </div>
                 </div>
                 <div className="mb-8 md:mb-0">
                     <h3 className="font-medium text-gray-500 text-base mb-12 text-left ml-[10px] md:ml-0">Links</h3>
@@ -35,7 +55,7 @@ const Footer = () => {
                 <p>2023 furino. All rights reserved</p>
             </section>
         </footer>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;
